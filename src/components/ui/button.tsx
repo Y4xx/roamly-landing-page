@@ -20,6 +20,10 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
+        /** The money action. Use only for "buy" CTAs — see globals.css. */
+        cta: "bg-cta text-on-cta shadow-sm hover:bg-cta-hover active:bg-cta-active focus-visible:ring-gray-900/40 focus-visible:border-gray-900",
+        "coral-outline":
+          "border border-coral-300 bg-background text-coral-600 shadow-xs hover:bg-coral-50",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

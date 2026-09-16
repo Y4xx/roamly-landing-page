@@ -1,8 +1,13 @@
-import { Inter } from 'next/font/google'
+import { Inter, Noto_Sans_Arabic } from 'next/font/google'
 
-// Configure Inter font to match exactly what Next.js optimizes for
 export const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
+})
+
+export const notoSansArabic = Noto_Sans_Arabic({
+  subsets: ['arabic'],
+  display: 'swap',
+  variable: '--font-noto-arabic',
 })

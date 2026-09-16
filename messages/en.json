@@ -1,0 +1,372 @@
+{
+  "meta": {
+    "title": "Roamly — Travel eSIM | Stay connected, wherever you roam",
+    "description": "Prepaid travel eSIM delivered to your inbox in minutes. No roaming fees, no SIM swap, no contract. Keep your own number and get online the moment you land."
+  },
+  "nav": {
+    "getEsim": "Get your eSIM"
+  },
+  "common": {
+    "supportLanguages": "English and French"
+  },
+  "links": {
+    "destinations": "Destinations",
+    "plans": "Plans",
+    "whatIsEsim": "What is an eSIM",
+    "faq": "FAQ",
+    "support": "Support",
+    "about": "About",
+    "blog": "Blog",
+    "compatibleDevices": "Compatible devices",
+    "installationGuide": "Installation guide",
+    "contact": "Contact",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "refundPolicy": "Refund Policy",
+    "cookiePolicy": "Cookie Policy",
+    "affiliate": "Affiliate programme",
+    "business": "For business"
+  },
+  "hero": {
+    "h1": "Stay connected, wherever you roam",
+    "subhead": "Prepaid mobile data for {count} destinations, delivered to your inbox in minutes. No SIM swap, no roaming bill, no contract.",
+    "chips": {
+      "delivered": "Delivered in minutes",
+      "noRoaming": "No roaming charges",
+      "ownNumber": "Keep your own number",
+      "checkCompatibility": "Works on your phone — check in 5 seconds"
+    },
+    "trustLine": "Secure payment by Stripe · Full refund if your phone isn't compatible"
+  },
+  "selector": {
+    "destinationLabel": "Where are you going?",
+    "destinationPlaceholder": "Choose a destination",
+    "daysLabel": "How many days?",
+    "daysPlaceholder": "Choose trip length",
+    "submit": "Find my plan",
+    "tripLengths": {
+      "7": "Up to 7 days",
+      "15": "8–15 days",
+      "30": "16–30 days",
+      "31": "More than 30 days"
+    }
+  },
+  "destinations": {
+    "europe": "Europe (33 countries)",
+    "usa": "United States",
+    "united-kingdom": "United Kingdom",
+    "turkey": "Turkey",
+    "morocco": "Morocco",
+    "thailand": "Thailand",
+    "japan": "Japan",
+    "uae": "United Arab Emirates"
+  },
+  "plans": {
+    "h2": "Choose your plan",
+    "subhead": "Clear prices in {currency}. What you see is what you pay — no activation fee, no deposit, and nothing renews automatically.",
+    "footnote": "All plans are data only. Prices shown in {currency}, VAT included. Your plan starts counting from the moment your eSIM first connects to a network, not from the moment you buy.",
+    "card": {
+      "gb": "{gb} GB",
+      "days": "{days} days",
+      "perGB": "({price} / GB)",
+      "get": "Get this plan",
+      "networks": "See covered networks",
+      "popular": "Popular"
+    }
+  },
+  "delivery": {
+    "h2": "How you get it",
+    "steps": {
+      "1": { "title": "Buy in two minutes.", "body": "Pick your destination and the number of days. Pay by card, Apple Pay or Google Pay." },
+      "2": { "title": "Check your inbox.", "body": "Your QR code and setup instructions arrive by email within {minutes} minutes. Nothing is shipped to you — a travel eSIM is fully digital." },
+      "3": { "title": "Install now, activate on arrival.", "body": "Install before you fly while you still have Wi-Fi. Switch it on when you land and you're online." }
+    },
+    "promise": {
+      "what": "What you receive: an email containing a QR code, a manual activation code, and step-by-step instructions for iPhone and Android.",
+      "whenLabel": "When:",
+      "whenBody": "within {minutes} minutes of payment, 24 hours a day.",
+      "nothingPostedLabel": "Nothing is posted.",
+      "nothingPostedBody": "There is no physical SIM card and no shipping.",
+      "notReceived": "Didn't receive it? Check your spam folder, then email us at {email} and we'll resend it straight away."
+    }
+  },
+  "payment": {
+    "h2": "Payment and security",
+    "bullets": {
+      "1": "We accept Visa, Mastercard, American Express, Apple Pay and Google Pay.",
+      "2": "Payments are processed by Stripe. Roamly never sees or stores your card details.",
+      "3": "You'll be charged in {currency}. Your bank statement will show {descriptor}.",
+      "4": "The site runs on encrypted HTTPS and our payment provider is PCI-DSS certified."
+    },
+    "pciBadge": "PCI-DSS certified"
+  },
+  "why": {
+    "h2": "Why travellers choose Roamly",
+    "tiles": {
+      "pricing": { "title": "Priced per gigabyte, openly.", "body": "Every plan shows its cost per GB next to the price. Compare us with anyone." },
+      "people": { "title": "Real people answer.", "body": "Write to us and a human replies in under {hours}, in {languages}. No bots, no ticket queue." },
+      "install": { "title": "Install before you fly.", "body": "Your eSIM waits quietly until you land. No scrambling for airport Wi-Fi with a dead phone." },
+      "refund": { "title": "If it doesn't work, you don't pay.", "body": "Couldn't connect? We refund it. No arguing, no form to fill in." }
+    }
+  },
+  "beforeYouBuy": {
+    "h2": "Before you buy — the honest version",
+    "checkNow": "Check your phone now",
+    "checkModel": "Check your model →",
+    "points": {
+      "device": { "strong": "Your phone needs to support eSIM and be carrier-unlocked.", "rest": "Dial *#06# — if you see an EID number, you're fine." },
+      "dataOnly": { "strong": "This is data only.", "rest": "You won't get a local phone number and you can't send or receive standard SMS. WhatsApp, iMessage, Telegram and Signal all work normally over data." },
+      "roaming": { "strong": "Your own number stays active", "rest": "alongside the eSIM. Just turn off data roaming on your main line, or your home operator will still charge you." },
+      "wifi": { "strong": "You'll need Wi-Fi to install it", "rest": ", so do it before you leave." },
+      "residence": { "strong": "You can't use a Roamly eSIM in your own country of residence.", "rest": "It's built for travel abroad." },
+      "speeds": { "strong": "Speeds depend on the local networks", "rest": "we partner with. Coverage is strong in cities and can be weaker in remote areas." }
+    }
+  },
+  "compatibility": {
+    "brandLabel": "Brand",
+    "brandPlaceholder": "Choose your brand",
+    "modelLabel": "Model",
+    "modelPlaceholder": "Choose your model",
+    "resultLabels": {
+      "compatible": "Compatible",
+      "incompatible": "Not compatible",
+      "unknown": "Check with your carrier"
+    },
+    "fallback": "Don't see your model? Dial *#06# on your phone — if an EID number appears, your phone supports eSIM. It also needs to be carrier-unlocked."
+  },
+  "devices": {
+    "brands": {
+      "Apple": "Apple",
+      "Samsung": "Samsung",
+      "Google": "Google",
+      "Other Android": "Other Android"
+    },
+    "notes": {
+      "iphone-x-earlier": "No eSIM hardware.",
+      "iphone-us-carrier": "US carrier models are often locked to one operator. Check with your carrier.",
+      "galaxy-a": "eSIM support varies by market and model — check your exact model number.",
+      "galaxy-us-variant": "US variants of some models ship without eSIM. Check your model number.",
+      "pixel-2-earlier": "No eSIM hardware.",
+      "budget-android": "eSIM is mainly on flagship models. Dial *#06# to check yours."
+    }
+  },
+  "trust": {
+    "h2": "We're new. Here's why you can trust us anyway.",
+    "body": "Roamly launched in {year}. We don't have a hundred thousand reviews yet — the companies that do took years to get them. What we can offer instead is a straight deal: transparent per-GB pricing, a human who answers, and a refund if your eSIM doesn't connect. If we get something wrong, tell us at {email} and we'll fix it."
+  },
+  "faq": {
+    "h2": "Frequently asked questions",
+    "items": {
+      "compatible": { "question": "Will it work on my phone?", "answer": "Most phones released after 2018 support eSIM. Dial *#06# — if an EID number appears, your phone is compatible. Your phone also needs to be carrier-unlocked. If you're not sure, check with your home operator before buying." },
+      "own-number": { "question": "Do I keep my own phone number?", "answer": "Yes. Your eSIM runs alongside your normal SIM. Your number, contacts, WhatsApp and iMessage all stay exactly as they are." },
+      "calls-texts": { "question": "Can I make calls or send texts?", "answer": "Not standard calls or SMS — Roamly plans are data only. You can call and message freely through WhatsApp, Signal, Telegram, FaceTime and similar apps." },
+      "when-starts": { "question": "When does my plan start?", "answer": "When your eSIM first connects to a network in your destination, not when you buy it. So you can buy weeks ahead without losing days." },
+      "when-install": { "question": "When should I install it?", "answer": "Before you fly, while you have Wi-Fi. Install it, then leave it switched off until you land." },
+      "delivery-speed": { "question": "How fast is delivery?", "answer": "Within {minutes} minutes, by email, any time of day." },
+      "lost-qr": { "question": "What if I delete the QR code?", "answer": "Email us at {email} and we'll resend it. Keep the confirmation email — a QR code can usually only be installed once." },
+      "hotspot": { "question": "Can I use a hotspot?", "answer": "Yes, on most plans. Check the plan description before buying — a few destinations restrict hotspot/tethering at the network level." },
+      "check-data": { "question": "How do I check how much data is left?", "answer": "In your phone's mobile data settings, under the Roamly eSIM line. A self-serve usage page is on our roadmap." },
+      "data-runs-out": { "question": "What happens when my data runs out?", "answer": "The connection stops. You can buy a top-up or a new plan at any time." },
+      "refund": { "question": "Can I get a refund?", "answer": "Yes, in these cases: your phone turned out not to be compatible, your trip was cancelled and the eSIM was never installed, or the eSIM failed to connect and we couldn't fix it. Refunds go back to the card you paid with within {window}. Full terms on our Refund Policy page." },
+      "multi-country": { "question": "Can I use one eSIM for several countries?", "answer": "Yes — our Europe regional plan covers 33 countries on a single eSIM. Single-country destinations cover that one country only." },
+      "networks": { "question": "Which networks will I connect to?", "answer": "We work with local operators in each destination. The partner networks are listed on each plan page." },
+      "privacy": { "question": "What data do you collect?", "answer": "Your email address and your purchase details, so we can deliver your eSIM and support you. We can't see your browsing, your messages or your calls. Full details in our Privacy Policy." }
+    }
+  },
+  "support": {
+    "h2": "Need help?",
+    "body": "Write to {email} and a person will reply within {hours}, {days}, in {languages}. If you're already travelling and can't get online, message us on WhatsApp.",
+    "emailButton": "{email}",
+    "whatsappButton": "WhatsApp"
+  },
+  "finalCta": {
+    "h2": "Ready to roam?",
+    "subhead": "Pick your destination and be connected before you've finished packing."
+  },
+  "footer": {
+    "tagline": "Stay connected, wherever you roam",
+    "columnTitles": {
+      "roamly": "Roamly",
+      "help": "Help",
+      "legal": "Legal",
+      "partners": "Partners"
+    },
+    "cookieSettings": "Cookie settings",
+    "bottomLine": "{entity}, {registration}, {address}. © Roamly {year}. Roamly provides prepaid mobile data services for international travel."
+  },
+  "cookie": {
+    "banner": {
+      "text": "We use essential cookies to run this site, and optional analytics cookies to understand how it's used. No tracking cookies fire until you choose.",
+      "policyLink": "Cookie Policy",
+      "customize": "Customize",
+      "reject": "Reject non-essential",
+      "acceptAll": "Accept all"
+    },
+    "dialog": {
+      "title": "Cookie settings",
+      "description": "Choose which cookies Roamly is allowed to set on this device.",
+      "essentialLabel": "Essential",
+      "essentialBody": "Required for checkout and security. Always on.",
+      "analyticsLabel": "Analytics",
+      "analyticsBody": "Helps us understand which plans and pages travellers use.",
+      "save": "Save preferences"
+    }
+  },
+  "localeSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you're looking for doesn't exist or has moved.",
+    "cta": "Back to home"
+  },
+  "loading": "Loading…",
+  "pages": {
+    "about": {
+      "title": "About Roamly",
+      "subtitle": "A straight deal on travel data: transparent pricing, a human who answers, and a refund if it doesn't work.",
+      "s1h": "Why we started",
+      "s1b": "Travel eSIM pricing is usually a maze of \"from €X\" teasers, auto-renewing plans and hidden per-GB costs. Roamly launched in {year} to do the opposite: one visible price per plan, per-GB comparison built into every card, and nothing that renews without you asking for it.",
+      "s2h": "How it works",
+      "s2b": "We don't operate mobile networks ourselves. Roamly is a reseller: we buy data capacity from an eSIM aggregator with agreements across local operators worldwide, and package it into simple, fixed-price plans for travellers.",
+      "s3h": "Get in touch",
+      "s3b": "Questions, feedback, or a partnership idea — write to {email}."
+    },
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Destination guides, connectivity tips and product updates — coming soon.",
+      "body": "We're writing our first destination guides now. In the meantime, if there's a specific country or topic you'd like us to cover, tell us at {email}."
+    },
+    "whatIsEsim": {
+      "title": "What is an eSIM?",
+      "subtitle": "An eSIM is a digital SIM card built into your phone. Instead of a physical card you insert, you install it by scanning a QR code.",
+      "s1h": "How it's different from a physical SIM",
+      "s1b": "A physical SIM is a small plastic card you swap in and out of your phone. An eSIM is software — it lives on a chip already inside your phone. Installing one takes a QR code scan and a couple of taps, not a trip to a kiosk or a SIM ejector tool.",
+      "s2h": "Why travellers use it",
+      "s2b": "You keep your home SIM active for calls and texts on your own number, and run a Roamly eSIM alongside it purely for mobile data in your destination. No roaming charges from your home carrier, no hunting for a local SIM shop after a long flight.",
+      "s3h": "Is my phone compatible?",
+      "s3b": "Most phones released after 2018 support eSIM. Dial *#06# — if an EID number appears, your phone is compatible. Check your exact model below.",
+      "s4h": "Partner networks",
+      "s4b": "Roamly connects you to local mobile operators in each destination through our eSIM aggregator partner. The specific partner network for each destination is confirmed at checkout and in your delivery email, and can change if we switch providers to improve coverage or price. Coverage is generally strongest in and around cities.",
+      "networkConfirmed": "network confirmed at checkout"
+    },
+    "compatibleDevices": {
+      "title": "Compatible devices",
+      "subtitle": "An eSIM-compatible phone must support eSIM technology and be carrier-unlocked. Use the checker or browse the full list below."
+    },
+    "installationGuide": {
+      "title": "Installation guide",
+      "subtitle": "Install before you fly, while you still have Wi-Fi. Then leave it switched off until you land.",
+      "iosTitle": "iPhone",
+      "ios1": "Open the QR code email we sent you on a computer or another phone.",
+      "ios2": "On your iPhone, go to Settings → Cellular → Add eSIM (on older iOS versions: Settings → Mobile Data → Add eSIM).",
+      "ios3": "Choose Use QR Code and scan the code from the email.",
+      "ios4": "Follow the prompts, and label the new line \"Roamly\" or your destination name.",
+      "ios5": "Under Cellular Plans, set your home line as default for calls/iMessage and the Roamly eSIM for data — then turn on Data Roaming for the Roamly line only.",
+      "androidTitle": "Android",
+      "android1": "Open the QR code email we sent you on a computer or another phone.",
+      "android2": "Go to Settings → Network & Internet → SIMs (menus vary slightly by manufacturer) and tap Add eSIM / Add network.",
+      "android3": "Choose Scan QR code and scan the code from the email.",
+      "android4": "Follow the prompts to finish installation.",
+      "android5": "Make sure mobile data is enabled for the Roamly eSIM, and data roaming is turned on for that line specifically.",
+      "noQrTitle": "No QR code scanner handy?",
+      "noQrBody": "Every delivery email also includes a manual activation code you can type in directly — look for \"Enter details manually\" in your phone's eSIM setup screen.",
+      "stuckTitle": "Still stuck?",
+      "stuckBody": "Email us at {email} with your order confirmation and a screenshot of where you're stuck — we'll walk you through it."
+    },
+    "contact": {
+      "title": "Contact us",
+      "subtitle": "A person replies within {hours}, {days}, in {languages}.",
+      "emailLabel": "Email",
+      "whatsappLabel": "WhatsApp",
+      "whatsappSub": "For travellers already abroad",
+      "orderNote": "Order issue? Include your order confirmation email so we can look it up straight away."
+    },
+    "affiliate": {
+      "title": "Affiliate programme",
+      "subtitle": "Travel creators, bloggers and communities: earn commission on every Roamly plan you refer.",
+      "body": "Our affiliate programme is being finalised. If you have an audience of travellers and want early access to referral links and commission rates, email us at {email} with a bit about where you'd be sharing Roamly, and we'll follow up."
+    },
+    "business": {
+      "title": "Roamly for business",
+      "subtitle": "Keep travelling employees connected without expense-report roaming charges.",
+      "body": "If your team travels regularly, we can set up bulk eSIM orders and centralised billing so nobody has to submit a roaming receipt again. This is a new offering — write to {email} with your team size and typical destinations, and we'll put together a plan."
+    },
+    "terms": {
+      "title": "Terms and Conditions",
+      "s1h": "1. Who we are",
+      "s1b": "Roamly ({entity}, {registration}, {address}) sells prepaid mobile data eSIMs for international travel. We are a reseller: we do not operate our own mobile network.",
+      "s2h": "2. What you're buying",
+      "s2b": "Each plan is a fixed amount of mobile data, valid for a fixed number of days from first network connection, for a named destination. Plans are data only — no voice calls, no SMS, no local phone number. Plans do not renew automatically.",
+      "s3h": "3. Delivery",
+      "s3b": "Your eSIM is delivered by email as a QR code and manual activation code, normally within {minutes} minutes of successful payment. No physical item is shipped.",
+      "s4h": "4. Your responsibilities",
+      "s4b": "You're responsible for confirming your device is eSIM-compatible and carrier-unlocked before you buy. See our Refund Policy for what happens if it turns out not to be.",
+      "s5h": "5. Payment",
+      "s5b": "Payments are processed by Stripe. We do not store your card details. Charges appear on your statement as {descriptor}.",
+      "s6h": "6. Limitation of liability",
+      "s6b": "Roamly is not liable for network coverage or speed at your destination, which depends on our local operator partners, or for losses arising from your device being incompatible or locked. Our liability for any claim is limited to the amount you paid for the relevant plan.",
+      "s7h": "7. Contact",
+      "s7b": "Questions about these terms: {email}."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "s1h": "What we collect",
+      "s1b": "Your email address and purchase details (destination, plan, price), so we can deliver your eSIM and provide support. If you enable analytics cookies, we also collect anonymised usage data about which pages and plans are viewed.",
+      "s2h": "What we don't collect",
+      "s2b": "We can't see your browsing history outside our site, your messages, or your calls. We never see or store your card details — those are handled directly by Stripe.",
+      "s3h": "How we use it",
+      "s3l1": "To deliver your eSIM and send order confirmations.",
+      "s3l2": "To respond when you contact support.",
+      "s3l3": "To improve the site, only with your consent to analytics cookies.",
+      "s4h": "Your rights",
+      "s4b": "You can ask us what data we hold about you, ask us to correct it, or ask us to delete it, by emailing {email}.",
+      "s5h": "Cookies",
+      "s5b": "See our Cookie Policy for the full list of cookies we use and how to change your preferences at any time."
+    },
+    "refundPolicy": {
+      "title": "Refund Policy",
+      "s1h": "When you're eligible",
+      "s1l1": "Your phone turned out not to be eSIM-compatible or carrier-unlocked.",
+      "s1l2": "Your trip was cancelled and the eSIM was never installed.",
+      "s1l3": "The eSIM failed to connect to a network and we couldn't fix it.",
+      "s2h": "When you're not eligible",
+      "s2b": "Once an eSIM has been installed and successfully connected to a network, it has been consumed and cannot be refunded for unused data, change of mind, or early trip departure.",
+      "s3h": "How to request one",
+      "s3b": "Email {email} with your order confirmation and the reason. We aim to respond within {hours}.",
+      "s4h": "How long it takes",
+      "s4b": "Approved refunds are returned to the card you paid with within {window}."
+    },
+    "cookiePolicy": {
+      "title": "Cookie Policy",
+      "s1h": "What cookies are",
+      "s1b": "Small files stored on your device that let a site remember things between visits, or measure how it's used. Nothing beyond essential cookies is set until you choose to allow it in the cookie banner.",
+      "s2h": "What we use",
+      "tableType": "Type",
+      "tablePurpose": "Purpose",
+      "tableDisable": "Can I disable it?",
+      "essentialName": "Essential",
+      "essentialPurpose": "Keeps checkout and basic site functions working.",
+      "essentialDisable": "No — required for the site to function.",
+      "analyticsName": "Analytics",
+      "analyticsPurpose": "Anonymised data on which pages and plans are viewed, to improve the site.",
+      "analyticsDisable": "Yes — off by default, opt in via the cookie banner or Cookie settings.",
+      "s3h": "Changing your preferences",
+      "s3b": "Use the \"Cookie settings\" link in the footer at any time to change your choice."
+    },
+    "checkout": {
+      "title": "Checkout",
+      "empty": "Choose a plan first — head back to our plans.",
+      "emptyLink": "our plans",
+      "notice": "Stripe Checkout isn't wired up in this build yet. This page shows what the buyer sees before payment — plan, price and per-GB rate — with the real Stripe payment element and Apple Pay / Google Pay buttons to be added here.",
+      "continue": "Continue to payment"
+    }
+  },
+  "legalDraft": {
+    "label": "Draft, pending legal review.",
+    "body": "This page is a working draft to keep the site launch-ready structurally. Have it reviewed by counsel in your operating jurisdiction before going live."
+  }
+}

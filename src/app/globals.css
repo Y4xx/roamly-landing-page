@@ -25,19 +25,67 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Full palette exposed as utilities: bg-coral-50, text-teal-600, etc. */
+  --color-coral-50: var(--coral-50);
+  --color-coral-100: var(--coral-100);
+  --color-coral-200: var(--coral-200);
+  --color-coral-300: var(--coral-300);
+  --color-coral-400: var(--coral-400);
+  --color-coral-500: var(--coral-500);
+  --color-coral-600: var(--coral-600);
+  --color-coral-700: var(--coral-700);
+  --color-coral-800: var(--coral-800);
+  --color-coral-900: var(--coral-900);
+
+  --color-gray-0: var(--gray-0);
+  --color-gray-50: var(--gray-50);
+  --color-gray-100: var(--gray-100);
+  --color-gray-200: var(--gray-200);
+  --color-gray-300: var(--gray-300);
+  --color-gray-400: var(--gray-400);
+  --color-gray-500: var(--gray-500);
+  --color-gray-600: var(--gray-600);
+  --color-gray-700: var(--gray-700);
+  --color-gray-800: var(--gray-800);
+  --color-gray-900: var(--gray-900);
+  --color-gray-950: var(--gray-950);
+
+  --color-teal-500: var(--teal-500);
+  --color-teal-600: var(--teal-600);
+  --color-amber-500: var(--amber-500);
+  --color-amber-600: var(--amber-600);
+  --color-rose-500: var(--rose-500);
+  --color-rose-600: var(--rose-600);
+
+  --color-success: var(--teal-500);
+  --color-success-subtle: #e4f5f3;
+  --color-warning: var(--amber-500);
+  --color-warning-subtle: #fdf3de;
+  --color-error: var(--rose-500);
+  --color-error-subtle: #fce8ec;
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-inverse: var(--text-inverse);
+  --color-text-link: var(--text-link);
+
+  --color-surface-page: var(--surface-page);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-surface-card: var(--surface-card);
+  --color-surface-elevated: var(--surface-elevated);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-default: var(--border-default);
+  --color-border-strong: var(--border-strong);
+  --color-border-focus: var(--border-focus);
+
+  /* Conversion accent — reserved for the buy action only */
+  --color-cta: var(--cta-green);
+  --color-cta-hover: var(--cta-green-hover);
+  --color-cta-active: var(--cta-green-active);
+  --color-on-cta: var(--color-on-cta);
 }
 
 :root {
@@ -45,7 +93,7 @@
 
   /* Accent — coral (primary) */
   --coral-50:#FFF6F6;  --coral-100:#FEDADD; --coral-200:#FDC3C6;
-  --coral-300:#FB8E94; --coral-400:#FA6972; --coral-500:#F94853;
+  --coral-300:#FB8E94; --coral-400:#FA6972; --coral-500:#FC5161;
   --coral-600:#CF3C45; --coral-700:#7D242A; --coral-800:#641D21;
   --coral-900:#4D161A;
 
@@ -82,6 +130,12 @@
   --border-subtle:var(--gray-200);  --border-default:var(--gray-300);
   --border-strong:var(--gray-400);  --border-focus:var(--coral-500);
 
+  /* Conversion accent — reserved for the buy action ONLY, see globals.css usage rules */
+  --cta-green:#47EC86;
+  --cta-green-hover:#2DD973;
+  --cta-green-active:#1FBE5F;
+  --color-on-cta:var(--gray-900);
+
   /* shadcn/Tailwind tokens, mapped onto the palette above */
   --background: var(--surface-page);
   --foreground: var(--text-primary);
@@ -101,19 +155,6 @@
   --border: var(--border-default);
   --input: var(--border-subtle);
   --ring: var(--border-focus);
-  --chart-1: var(--coral-500);
-  --chart-2: var(--teal-500);
-  --chart-3: var(--amber-500);
-  --chart-4: var(--rose-500);
-  --chart-5: var(--gray-500);
-  --sidebar: var(--surface-sunken);
-  --sidebar-foreground: var(--text-primary);
-  --sidebar-primary: var(--color-primary);
-  --sidebar-primary-foreground: var(--color-on-primary);
-  --sidebar-accent: var(--gray-100);
-  --sidebar-accent-foreground: var(--text-primary);
-  --sidebar-border: var(--border-subtle);
-  --sidebar-ring: var(--border-focus);
 }
 
 @layer base {
@@ -139,20 +180,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Logo carousel animation */
-@keyframes logo-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-144rem); /* 12 items * 12rem = 144rem */
-  }
+/* Anchor targets (in-page nav) land below the sticky header */
+[id] {
+  scroll-margin-top: 5rem;
 }
 
-.animate-logo-scroll {
-  animation: logo-scroll 30s linear infinite;
-}
-
-.animate-logo-scroll:hover {
-  animation-play-state: paused;
+/* Arabic needs a script that actually has Arabic glyphs — Inter doesn't. */
+html[lang="ar"] {
+  --font-sans: var(--font-noto-arabic);
 }
