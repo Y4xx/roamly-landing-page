@@ -6,10 +6,10 @@ interface LogoProps {
   height?: number;
 }
 
-export function Logo({ variant = "color", className, height = 28 }: LogoProps) {
+export function Logo({ variant = "color", className, height = 40 }: LogoProps) {
   const src =
     variant === "white"
-      ? "/logo/app-logo-white.png"
+      ? "/logo/app-logo-black.png"
       : "/logo/app-logo-removebg-preview.png";
 
   return (

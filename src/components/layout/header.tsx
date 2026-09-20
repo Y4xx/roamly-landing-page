@@ -23,9 +23,9 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border-subtle bg-surface-page/95 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-[1460px] items-center justify-between px-4 sm:px-6 lg:px-0.5">
         <Link href="/" className="flex items-center" aria-label="Roamly home">
-          <Logo height={26} />
+          <Logo height={60} />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

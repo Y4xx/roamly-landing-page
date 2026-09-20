@@ -19,10 +19,10 @@ export function Footer() {
 
   return (
     <footer className="bg-gray-900 text-gray-400">
-      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1460px] px-4 py-14 sm:px-6 lg:px-0.5">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-1">
-            <Logo variant="white" height={26} />
+            <Logo variant="white" />
             <p className="mt-4 max-w-xs text-sm text-gray-400">{t("footer.tagline")}</p>
           </div>
 

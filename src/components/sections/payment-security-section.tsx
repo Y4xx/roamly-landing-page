@@ -11,7 +11,7 @@ export function PaymentSecuritySection() {
 
   return (
     <section className="bg-surface-sunken py-16 sm:py-24">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1076px] px-4 sm:px-6 lg:px-0.5">
         <div className="rounded-2xl border border-border-subtle bg-surface-card p-6 sm:p-10">
           <div className="flex items-center gap-2">
             <Lock className="size-5 text-teal-500" aria-hidden />

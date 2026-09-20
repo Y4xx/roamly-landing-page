@@ -9,7 +9,7 @@ export function SupportSection() {
 
   return (
     <section id="support" className="bg-surface-sunken py-16 sm:py-24">
-      <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[852px] px-4 text-center sm:px-6 lg:px-0.5">
         <h2 className="text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
           {t("h2")}
         </h2>

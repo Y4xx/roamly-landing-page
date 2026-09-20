@@ -7,7 +7,7 @@ export function TrustSection() {
 
   return (
     <section className="bg-surface-page py-16 sm:py-24">
-      <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[948px] px-4 text-center sm:px-6 lg:px-0.5">
         <h2 className="text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
           {t("h2")}
         </h2>

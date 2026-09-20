@@ -12,7 +12,7 @@ export function BeforeYouBuySection() {
 
   return (
     <section className="bg-surface-sunken py-16 sm:py-24">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1204px] px-4 sm:px-6 lg:px-0.5">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
             {t("h2")}
