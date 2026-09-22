@@ -36,7 +36,7 @@ export function FaqAccordion({ items, withSchema = true }: FaqAccordionProps) {
       <Accordion type="single" collapsible className="w-full">
         {items.map((item) => (
           <AccordionItem key={item.id} value={item.id}>
-            <AccordionTrigger className="text-base font-medium data-[state=open]:text-coral-600">
+            <AccordionTrigger className="text-base font-medium data-[state=open]:text-primary cursor-pointer">
               {item.question}
             </AccordionTrigger>
             <AccordionContent className="text-text-secondary">

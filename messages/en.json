@@ -28,7 +28,7 @@
     "business": "For business"
   },
   "hero": {
-    "h1": "Stay connected, wherever you roam",
+    "h1": "Stay <accent>connected</accent>, wherever you <accent>roam</accent>",
     "subhead": "Prepaid mobile data for {count} destinations, delivered to your inbox in minutes. No SIM swap, no roaming bill, no contract.",
     "chips": {
       "delivered": "Delivered in minutes",
@@ -44,12 +44,8 @@
     "daysLabel": "How many days?",
     "daysPlaceholder": "Choose trip length",
     "submit": "Find my plan",
-    "tripLengths": {
-      "7": "Up to 7 days",
-      "15": "8–15 days",
-      "30": "16–30 days",
-      "31": "More than 30 days"
-    }
+    "apply": "Apply",
+    "tripSummary": "{days}-day trip"
   },
   "destinations": {
     "europe": "Europe (33 countries)",
@@ -59,12 +55,28 @@
     "morocco": "Morocco",
     "thailand": "Thailand",
     "japan": "Japan",
-    "uae": "United Arab Emirates"
+    "uae": "United Arab Emirates",
+    "caribbean-cruise": "Caribbean Cruise",
+    "alaska-cruise": "Alaska Cruise",
+    "europe-cruise": "Europe Cruise",
+    "mediterranean-cruise": "Mediterranean Cruise",
+    "hong-kong": "Hong Kong",
+    "africa": "Africa",
+    "central-america": "Central America",
+    "north-america": "North America",
+    "latin-america": "Latin America"
   },
   "plans": {
-    "h2": "Choose your plan",
-    "subhead": "Clear prices in {currency}. What you see is what you pay — no activation fee, no deposit, and nothing renews automatically.",
+    "h2": "Where's your next trip?",
+    "subhead": "Choose from 199 destinations worldwide.",
     "footnote": "All plans are data only. Prices shown in {currency}, VAT included. Your plan starts counting from the moment your eSIM first connects to a network, not from the moment you buy.",
+    "tabs": {
+      "countries": "Countries",
+      "regions": "Regions",
+      "plans": "Plans",
+      "new": "New"
+    },
+    "viewAll": "See all destinations",
     "card": {
       "gb": "{gb} GB",
       "days": "{days} days",
@@ -363,6 +375,78 @@
       "emptyLink": "our plans",
       "notice": "Stripe Checkout isn't wired up in this build yet. This page shows what the buyer sees before payment — plan, price and per-GB rate — with the real Stripe payment element and Apple Pay / Google Pay buttons to be added here.",
       "continue": "Continue to payment"
+    },
+    "allDestinations": {
+      "title": "All destinations",
+      "subtitle": "Choose from {count} destinations worldwide.",
+      "searchPlaceholder": "Where are you going?",
+      "tabs": {
+        "popular": "Popular",
+        "regions": "Regional plans",
+        "countries": "Countries",
+        "all": "All destinations"
+      },
+      "empty": "No destination matches your search.",
+      "pagination": {
+        "showing": "Showing {from}–{to} of {total} destinations",
+        "previous": "Previous",
+        "next": "Next"
+      }
+    },
+    "esimDetail": {
+      "breadcrumbHome": "Destinations",
+      "notFoundTitle": "Destination not found",
+      "notFoundBody": "We couldn't find that destination. Browse all destinations instead.",
+      "backLink": "Back to all destinations",
+      "daysLabel": "Trip length",
+      "apply": "Apply",
+      "quantityLabel": "Number of eSIMs",
+      "total": "Total",
+      "cta": "Get my eSIM",
+      "dataIncluded": "{gb} GB included",
+      "features": {
+        "noRoaming": "No roaming fees",
+        "fastActivation": "Instant activation, no physical SIM needed",
+        "clearData": "A clear, fixed data allowance — no surprise charges",
+        "compatibility": "Check eSIM compatibility before you buy"
+      },
+      "steps": {
+        "title": "Get connected in 3 simple steps",
+        "step1Title": "Buy in 2 minutes",
+        "step1Body": "Choose your trip length and pay by card, Apple Pay or Google Pay.",
+        "step2Title": "Install before you fly",
+        "step2Body": "Scan the QR code we email you while you still have Wi-Fi.",
+        "step3Title": "Connect on arrival",
+        "step3Body": "Turn on data roaming for the Roamly line the moment you land."
+      },
+      "compare": {
+        "title": "Why choose Roamly over a local SIM",
+        "featureCol": "",
+        "roamlyCol": "Roamly eSIM",
+        "otherCol": "Local SIM / other eSIM",
+        "rows": {
+          "roaming": "No roaming fees",
+          "activation": "Instant activation before you land",
+          "pricing": "One clear, fixed price — no hidden fees",
+          "number": "Keep your own phone number"
+        }
+      },
+      "pricing": {
+        "title": "{name} eSIM pricing",
+        "days": "Days",
+        "price": "Price"
+      },
+      "faq": {
+        "title": "Frequently asked questions",
+        "q1": "What is an eSIM?",
+        "a1": "An eSIM is a digital SIM built into your phone. You install it by scanning a QR code instead of inserting a physical card.",
+        "q2": "When does my plan start?",
+        "a2": "Your plan starts counting from the moment your eSIM first connects to a network at your destination, not from the moment you buy.",
+        "q3": "Can I use my phone number at the same time?",
+        "a3": "Yes. Keep your home SIM active for calls and texts on your own number, and use the Roamly eSIM only for mobile data.",
+        "q4": "What if my phone isn't compatible?",
+        "a4": "Check compatibility before you buy on our compatible devices page. Most phones released after 2018 support eSIM."
+      }
     }
   },
   "legalDraft": {

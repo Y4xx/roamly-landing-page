@@ -21,7 +21,7 @@ export function FaqSection() {
     <section id="faq" className="bg-surface-page py-16 sm:py-24">
       <div className="mx-auto max-w-[948px] px-4 sm:px-6 lg:px-0.5">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
             {t("h2")}
           </h2>
         </div>

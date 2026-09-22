@@ -18,7 +18,7 @@ export function Footer() {
   const t = useTranslations();
 
   return (
-    <footer className="bg-gray-900 text-gray-400">
+    <footer className="bg-gray-900 text-gray-400 relative">
       <div className="mx-auto max-w-[1460px] px-4 py-14 sm:px-6 lg:px-0.5">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-1">
@@ -70,6 +70,18 @@ export function Footer() {
             })}
           </p>
         </div>
+      </div>
+
+      <div className="absolute inset-x-0 -top-10 z-10 h-10 sm:h-14 lg:h-20">
+        <svg
+          className="absolute inset-x-0 top-0 h-10 w-full text-gray-900 sm:h-14 lg:h-20"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M0,40 C240,100 480,0 720,50 C960,100 1200,10 1440,60 L1440,120 L0,120 Z" />
+        </svg>
       </div>
     </footer>
   );

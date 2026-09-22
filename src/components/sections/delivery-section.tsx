@@ -8,8 +8,8 @@ export function DeliverySection() {
   const t = useTranslations("delivery");
 
   return (
-    <section className="bg-surface-sunken py-16 sm:py-24">
-      <div className="mx-auto max-w-[1204px] px-4 sm:px-6 lg:px-0.5">
+    <section className="bg-surface-sunken py-10 sm:py-24 relative">
+      <div className="mx-auto max-w-301 px-4 sm:px-6 lg:px-0.5">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
             {t("h2")}
@@ -48,6 +48,18 @@ export function DeliverySection() {
             {t("promise.notReceived", { email: site.supportEmail })}
           </p>
         </div>
+      </div>
+
+      <div className="absolute inset-x-0 sm:-bottom-5 -bottom-0 z-10 h-10 sm:h-14 lg:h-20">
+        <svg
+          className="absolute inset-x-0 bottom-0 h-10 w-full text-white sm:h-14 lg:h-20"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M0,40 C240,100 480,0 720,50 C960,100 1200,10 1440,60 L1440,120 L0,120 Z" />
+        </svg>
       </div>
     </section>
   );

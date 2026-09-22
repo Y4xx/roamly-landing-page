@@ -28,7 +28,7 @@
     "business": "Pour les entreprises"
   },
   "hero": {
-    "h1": "Restez connecté, où que vous voyagiez",
+    "h1": "Restez <accent>connecté</accent>, où que vous <accent>voyagiez</accent>",
     "subhead": "Data mobile prépayée pour {count} destinations, livrée dans votre boîte mail en quelques minutes. Sans changement de carte SIM, sans facture d'itinérance, sans engagement.",
     "chips": {
       "delivered": "Livrée en quelques minutes",
@@ -44,12 +44,8 @@
     "daysLabel": "Combien de jours ?",
     "daysPlaceholder": "Choisissez la durée du séjour",
     "submit": "Trouver mon forfait",
-    "tripLengths": {
-      "7": "Jusqu'à 7 jours",
-      "15": "8 à 15 jours",
-      "30": "16 à 30 jours",
-      "31": "Plus de 30 jours"
-    }
+    "apply": "Appliquer",
+    "tripSummary": "Séjour de {days} jours"
   },
   "destinations": {
     "europe": "Europe (33 pays)",
@@ -59,12 +55,28 @@
     "morocco": "Maroc",
     "thailand": "Thaïlande",
     "japan": "Japon",
-    "uae": "Émirats arabes unis"
+    "uae": "Émirats arabes unis",
+    "caribbean-cruise": "Croisière aux Caraïbes",
+    "alaska-cruise": "Croisière en Alaska",
+    "europe-cruise": "Croisière en Europe",
+    "mediterranean-cruise": "Croisière en Méditerranée",
+    "hong-kong": "Hong Kong",
+    "africa": "l'Afrique",
+    "central-america": "l'Amérique centrale",
+    "north-america": "l'Amérique du Nord",
+    "latin-america": "l'Amérique latine"
   },
   "plans": {
-    "h2": "Choisissez votre forfait",
-    "subhead": "Prix clairs en {currency}. Ce que vous voyez est ce que vous payez — pas de frais d'activation, pas de caution, et rien ne se renouvelle automatiquement.",
+    "h2": "Quelle sera votre prochaine destination ?",
+    "subhead": "Choisissez parmi 199 destinations à travers le monde.",
     "footnote": "Tous les forfaits sont data uniquement. Prix affichés en {currency}, TVA incluse. Votre forfait démarre dès que votre eSIM se connecte pour la première fois à un réseau, pas au moment de l'achat.",
+    "tabs": {
+      "countries": "Pays",
+      "regions": "Régions",
+      "plans": "Forfaits",
+      "new": "Nouveau"
+    },
+    "viewAll": "Voir toutes les destinations",
     "card": {
       "gb": "{gb} Go",
       "days": "{days} jours",
@@ -363,6 +375,78 @@
       "emptyLink": "nos forfaits",
       "notice": "Le paiement Stripe n'est pas encore intégré dans cette version. Cette page montre ce que voit l'acheteur avant le paiement — forfait, prix et tarif au Go — avec le vrai module de paiement Stripe et les boutons Apple Pay / Google Pay à ajouter ici.",
       "continue": "Continuer vers le paiement"
+    },
+    "allDestinations": {
+      "title": "Toutes les destinations",
+      "subtitle": "Choisissez parmi {count} destinations à travers le monde.",
+      "searchPlaceholder": "Où voyages-tu ?",
+      "tabs": {
+        "popular": "Populaire",
+        "regions": "Forfaits régionaux",
+        "countries": "Pays",
+        "all": "Toutes les destinations"
+      },
+      "empty": "Aucune destination ne correspond à votre recherche.",
+      "pagination": {
+        "showing": "Affichage de {from} à {to} sur {total} destinations",
+        "previous": "Précédent",
+        "next": "Suivant"
+      }
+    },
+    "esimDetail": {
+      "breadcrumbHome": "Destinations",
+      "notFoundTitle": "Destination introuvable",
+      "notFoundBody": "Nous n'avons pas trouvé cette destination. Parcourez plutôt toutes les destinations.",
+      "backLink": "Retour à toutes les destinations",
+      "daysLabel": "Durée du séjour",
+      "apply": "Appliquer",
+      "quantityLabel": "Nombre d'eSIM",
+      "total": "Total",
+      "cta": "Obtenir mon eSIM",
+      "dataIncluded": "{gb} Go inclus",
+      "features": {
+        "noRoaming": "Aucun frais d'itinérance",
+        "fastActivation": "Activation instantanée, sans carte SIM physique",
+        "clearData": "Un volume de données clair et fixe — aucun frais surprise",
+        "compatibility": "Vérifiez la compatibilité eSIM avant d'acheter"
+      },
+      "steps": {
+        "title": "Connectez-vous en 3 étapes simples",
+        "step1Title": "Achetez en 2 minutes",
+        "step1Body": "Choisissez la durée de votre séjour et payez par carte, Apple Pay ou Google Pay.",
+        "step2Title": "Installez avant de partir",
+        "step2Body": "Scannez le QR code reçu par e-mail pendant que vous avez encore du Wi-Fi.",
+        "step3Title": "Connectez-vous à l'arrivée",
+        "step3Body": "Activez l'itinérance des données pour la ligne Roamly dès votre atterrissage."
+      },
+      "compare": {
+        "title": "Pourquoi choisir Roamly plutôt qu'une SIM locale",
+        "featureCol": "",
+        "roamlyCol": "eSIM Roamly",
+        "otherCol": "SIM locale / autre eSIM",
+        "rows": {
+          "roaming": "Aucun frais d'itinérance",
+          "activation": "Activation instantanée avant l'atterrissage",
+          "pricing": "Un prix clair et fixe — sans frais cachés",
+          "number": "Gardez votre propre numéro de téléphone"
+        }
+      },
+      "pricing": {
+        "title": "Prix de l'eSIM {name}",
+        "days": "Jours",
+        "price": "Prix"
+      },
+      "faq": {
+        "title": "Questions fréquentes",
+        "q1": "Qu'est-ce qu'une eSIM ?",
+        "a1": "Une eSIM est une carte SIM numérique intégrée à votre téléphone. Vous l'installez en scannant un QR code au lieu d'insérer une carte physique.",
+        "q2": "Quand mon forfait démarre-t-il ?",
+        "a2": "Votre forfait démarre dès que votre eSIM se connecte pour la première fois à un réseau à destination, pas au moment de l'achat.",
+        "q3": "Puis-je utiliser mon numéro de téléphone en même temps ?",
+        "a3": "Oui. Gardez votre carte SIM habituelle active pour les appels et les SMS avec votre propre numéro, et utilisez l'eSIM Roamly uniquement pour la data.",
+        "q4": "Et si mon téléphone n'est pas compatible ?",
+        "a4": "Vérifiez la compatibilité avant d'acheter sur notre page des appareils compatibles. La plupart des téléphones sortis après 2018 sont compatibles eSIM."
+      }
     }
   },
   "legalDraft": {

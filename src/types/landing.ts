@@ -3,6 +3,22 @@ export interface Destination {
   flag: string;
 }
 
+export interface GeneratedPlanTier {
+  days: number;
+  gb: number;
+  cost: number;
+  price: number;
+}
+
+export interface GeneratedDestination {
+  slug: string;
+  name: string;
+  code: string;
+  flag: string | null;
+  headline: GeneratedPlanTier;
+  tiers: GeneratedPlanTier[];
+}
+
 export interface Plan {
   id: string;
   destinationSlug: string;

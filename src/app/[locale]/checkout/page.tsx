@@ -1,10 +1,11 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ShieldCheck } from "lucide-react";
+import { Globe2, ShieldCheck } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { plans, pricePerGB } from "@/data/plans";
+import { resolveCatalogPlanId } from "@/data/catalog";
 import { site } from "@/data/site";
 
 export async function generateMetadata({
@@ -31,31 +32,52 @@ export default async function CheckoutPage({
   const tPlan = await getTranslations("plans.card");
 
   const { plan: planId } = await searchParams;
-  const plan = plans.find((p) => p.id === planId);
+  const legacyPlan = plans.find((p) => p.id === planId);
+  const resolved = !legacyPlan && planId ? resolveCatalogPlanId(planId) : undefined;
+
+  const checkoutItem = legacyPlan
+    ? {
+        flag: legacyPlan.flag as React.ReactNode,
+        name: tDest(legacyPlan.destinationSlug),
+        gb: legacyPlan.gb,
+        days: legacyPlan.days,
+        price: legacyPlan.priceEUR,
+        pricePerGb: pricePerGB(legacyPlan),
+      }
+    : resolved
+      ? {
+          flag: (resolved.entry.flag ?? <Globe2 className="size-5 text-text-tertiary" />) as React.ReactNode,
+          name: resolved.entry.name,
+          gb: resolved.tier.gb,
+          days: resolved.tier.days,
+          price: resolved.tier.price,
+          pricePerGb: (resolved.tier.price / resolved.tier.gb).toFixed(2),
+        }
+      : undefined;
 
   return (
     <div className="mx-auto max-w-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
       <h1 className="text-3xl font-bold tracking-tight text-text-primary">{t("title")}</h1>
 
-      {plan ? (
+      {checkoutItem ? (
         <div className="mt-8 rounded-2xl border border-border-subtle bg-surface-card p-6">
           <div className="flex items-center justify-between">
             <div>
               <p className="font-semibold text-text-primary">
-                {plan.flag} {tDest(plan.destinationSlug)}
+                {checkoutItem.flag} {checkoutItem.name}
               </p>
               <p className="text-sm text-text-secondary">
-                {tPlan("gb", { gb: plan.gb })} · {tPlan("days", { days: plan.days })}
+                {tPlan("gb", { gb: checkoutItem.gb })} · {tPlan("days", { days: checkoutItem.days })}
               </p>
             </div>
             <div className="text-right">
               <p className="text-xl font-bold text-text-primary">
                 {site.currencySymbol}
-                {plan.priceEUR.toFixed(2)}
+                {checkoutItem.price.toFixed(2)}
               </p>
               <p className="text-xs text-text-secondary">
                 {site.currencySymbol}
-                {pricePerGB(plan)} / GB
+                {checkoutItem.pricePerGb} / GB
               </p>
             </div>
           </div>

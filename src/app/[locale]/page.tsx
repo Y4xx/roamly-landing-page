@@ -25,7 +25,7 @@ export default async function HomePage({
       <HeroSection />
       <PlansSection />
       <DeliverySection />
-      <PaymentSecuritySection />
+      {/* <PaymentSecuritySection /> */}
       <WhyRoamlySection />
       <BeforeYouBuySection />
       <TrustSection />

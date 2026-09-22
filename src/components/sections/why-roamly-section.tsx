@@ -15,7 +15,7 @@ export function WhyRoamlySection() {
   const tCommon = useTranslations("common");
 
   return (
-    <section className="bg-surface-page py-16 sm:py-24">
+    <section className="bg-surface-page py-16 sm:py-24 relative">
       <div className="mx-auto max-w-[1460px] px-4 sm:px-6 lg:px-0.5">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
@@ -30,7 +30,7 @@ export function WhyRoamlySection() {
               className="rounded-2xl border border-border-subtle bg-surface-card p-6"
             >
               <div className="flex size-10 items-center justify-center rounded-lg bg-coral-50">
-                <tile.icon className="size-5 text-coral-600" aria-hidden />
+                <tile.icon className="size-5 text-primary" aria-hidden />
               </div>
               <h3 className="mt-4 font-semibold text-text-primary">
                 {t(`tiles.${tile.key}.title`)}
@@ -44,6 +44,18 @@ export function WhyRoamlySection() {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="absolute inset-x-0 -bottom-5 z-10 h-10 sm:h-14 lg:h-20">
+        <svg
+          className="absolute inset-x-0 bottom-0 h-10 w-full text-[#EBF0F4] sm:h-14 lg:h-20"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M0,40 C240,100 480,0 720,50 C960,100 1200,10 1440,60 L1440,120 L0,120 Z" />
+        </svg>
       </div>
     </section>
   );

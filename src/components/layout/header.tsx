@@ -2,7 +2,8 @@
 
 import * as React from "react";
 import { useTranslations } from "next-intl";
-import { Menu } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowRight, Menu } from "lucide-react";
 
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
@@ -20,11 +21,12 @@ import { mainNav } from "@/data/nav";
 
 export function Header() {
   const t = useTranslations();
+  const [isCtaHovered, setIsCtaHovered] = React.useState(false);
 
   return (
     <header className="sticky top-0 z-40 border-b border-border-subtle bg-surface-page/95 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-[1460px] items-center justify-between px-4 sm:px-6 lg:px-0.5">
-        <Link href="/" className="flex items-center" aria-label="Roamly home">
+      <div className="mx-auto flex h-16 max-w-365 items-center justify-between px-4 sm:px-6 lg:px-0.5">
+        <Link href="/" className="flex items-center -ml-2" aria-label="Roamly home">
           <Logo height={60} />
         </Link>
 
@@ -42,11 +44,25 @@ export function Header() {
 
         <div className="hidden items-center gap-2 md:flex">
           <LocaleSwitcher />
-          <Button variant="coral-outline" asChild>
-            <Link href="/#plans">{t("nav.getEsim")}</Link>
+          <Button variant="coral-outline" className="bg-primary text-white hover:text-primary" asChild>
+            <Link
+              href="/#plans"
+              onMouseEnter={() => setIsCtaHovered(true)}
+              onMouseLeave={() => setIsCtaHovered(false)}
+            >
+              {t("nav.getEsim")}
+              <motion.span
+                className="inline-flex"
+                animate={{ x: isCtaHovered ? 4 : 0 }}
+                transition={{ type: "spring", stiffness: 400, damping: 25 }}
+              >
+                <ArrowRight className="size-5" />
+              </motion.span>
+            </Link>
           </Button>
         </div>
 
+        {/* mobile nav */}
         <div className="flex items-center gap-1 md:hidden">
           <LocaleSwitcher />
           <Sheet>
@@ -58,7 +74,7 @@ export function Header() {
             <SheetContent side="right" className="w-full sm:max-w-xs">
               <SheetHeader>
                 <SheetTitle>
-                  <Logo height={22} />
+                  <Logo height={60} />
                 </SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col gap-1 px-4">
@@ -75,11 +91,26 @@ export function Header() {
               </nav>
               <div className="mt-auto p-4">
                 <SheetClose asChild>
-                  <Button variant="coral-outline" className="w-full" asChild>
-                    <Link href="/#plans">{t("nav.getEsim")}</Link>
+                  <Button variant="coral-outline" className="bg-primary text-white hover:text-primary w-full" asChild>
+                    <Link
+                      href="/#plans"
+                      onMouseEnter={() => setIsCtaHovered(true)}
+                      onMouseLeave={() => setIsCtaHovered(false)}
+                    >
+                      {t("nav.getEsim")}
+                      <motion.span
+                        className="inline-flex"
+                        animate={{ x: isCtaHovered ? 4 : 0 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 25 }}
+                      >
+                        <ArrowRight className="size-5" />
+                      </motion.span>
+                    </Link>
                   </Button>
                 </SheetClose>
               </div>
+
+
             </SheetContent>
           </Sheet>
         </div>
