@@ -41,6 +41,8 @@
   "selector": {
     "destinationLabel": "Where are you going?",
     "destinationPlaceholder": "Choose a destination",
+    "searchPlaceholder": "Search a country or region",
+    "noResults": "No destination found",
     "daysLabel": "How many days?",
     "daysPlaceholder": "Choose trip length",
     "submit": "Find my plan",

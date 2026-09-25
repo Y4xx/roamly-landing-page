@@ -41,6 +41,8 @@
   "selector": {
     "destinationLabel": "إلى أين تسافر؟",
     "destinationPlaceholder": "اختر وجهة",
+    "searchPlaceholder": "ابحث عن دولة أو منطقة",
+    "noResults": "لم يتم العثور على وجهة",
     "daysLabel": "كم عدد الأيام؟",
     "daysPlaceholder": "اختر مدة الرحلة",
     "submit": "ابحث عن باقتي",

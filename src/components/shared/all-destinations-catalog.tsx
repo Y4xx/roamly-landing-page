@@ -91,7 +91,7 @@ export function AllDestinationsCatalog({ all, countries, regions, popular }: All
       {pageItems.length > 0 ? (
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {pageItems.map((entry) => (
-            <DestinationCard key={entry.slug} slug={entry.slug} name={entry.name} flag={entry.flag} />
+            <DestinationCard key={entry.slug} slug={entry.slug} name={entry.name} flag={entry.flag} code={entry.code} />
           ))}
         </div>
       ) : (

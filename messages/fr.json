@@ -41,6 +41,8 @@
   "selector": {
     "destinationLabel": "Où partez-vous ?",
     "destinationPlaceholder": "Choisissez une destination",
+    "searchPlaceholder": "Rechercher un pays ou une région",
+    "noResults": "Aucune destination trouvée",
     "daysLabel": "Combien de jours ?",
     "daysPlaceholder": "Choisissez la durée du séjour",
     "submit": "Trouver mon forfait",
